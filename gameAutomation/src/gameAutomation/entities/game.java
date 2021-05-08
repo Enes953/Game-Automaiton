@@ -1,0 +1,44 @@
+package gameAutomation.entities;
+
+import gameAutomation.abstracts.Entity;
+
+public class game implements Entity{
+	private int id;
+	private String gameName;
+	private double unitPrice;
+	
+	public game() {
+		
+	}
+
+	public game(int id, String gameName, double unitPrice) {
+		this.id = id;
+		this.gameName = gameName;
+		this.unitPrice = unitPrice;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getGameName() {
+		return gameName;
+	}
+
+	public void setGameName(String gameName) {
+		this.gameName = gameName;
+	}
+
+	public double getUnitPrice() {
+		return unitPrice;
+	}
+
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
+	}
+
+}
